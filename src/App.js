@@ -8,7 +8,6 @@ import CountryPikerComponent from './components/countryPickerComponent';
 
 // API's
 import { fetchData, fetchCountryData } from './api';
-import { Grid, Typography } from '@material-ui/core';
 
 function App() {
 

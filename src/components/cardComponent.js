@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import { Grid, Paper } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import CountUp from 'react-countup';
 
 const useStyles = makeStyles({
@@ -41,7 +41,6 @@ const useStyles = makeStyles({
 });
 
 export default function CardComponent({ globalData: { confirmed, deaths, recovered, lastUpdate } }) {
-    // console.log('proops===card', confirmed, deaths, recovered, lastUpdate)
     const classes = useStyles();
     if (!confirmed) {
         return (
